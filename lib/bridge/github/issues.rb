@@ -46,7 +46,7 @@ class Huboard
       end
 
       def other_labels
-        self.labels.reject {|l| Huboard.all_patterns.any? {|p| p.match l.name }}
+        self.labels.reject {|l| Huboard.all_patterns.any? {|p| p.match l.name } && l.name != '1 - Ready to pull'}
       end
 
       def attach_client connection

@@ -201,6 +201,13 @@
     bottom:5px;
     left: 5px;
   }          
+  span.assignee {
+    position: absolute;
+    bottom: -8px;
+    left: 35px;
+    display: block;
+    color: #999;
+  }
   .number {
     position: absolute;
     vertical-align: bottom;

@@ -18,6 +18,7 @@ var lazy = new lazy(fs.createReadStream(args[0]))
     process.stdout.write(";" + out + "\r\n");
     } catch (err) {
         console.log(err.message, err);
+        process.stderr.write(err.message);
         process.stderr.write("Warning: " + file + " couldn't be found");
     }
 });
